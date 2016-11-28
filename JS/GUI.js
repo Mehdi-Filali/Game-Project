@@ -40,3 +40,4 @@ context.drawImage(stickman, 50, 50, 100, 100);
 
 canvas.style.position='absolute';
 canvas.style.marginTop='95px';
+

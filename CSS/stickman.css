@@ -1,0 +1,100 @@
+body{
+    position: relative;
+}
+#stickman{
+    background: url(../Image/Stickman1.png) no-repeat;
+    background-size: contain;
+    width: 12%;
+    height: 100px;
+    margin-top: 360px;
+    margin-left: 40px;
+    position: absolute;
+    -webkit-animation: 
+        stickman-run .35s linear infinite,
+        jump-stickman 4s linear infinite;
+}
+#stickman1{
+    background: url(../Image/Stickman1.png) no-repeat;
+    background-size: contain;
+    width: 13%;
+    height: 100;
+    margin-top: 165px;
+    margin-left: 50px;
+    position: absolute;
+    -webkit-animation: 
+        stickman-run .35s linear infinite;
+}
+
+/* Animation */
+
+@-webkit-keyframes stickman-run{
+    0%{ 
+        opacity: 1; 
+        background: url(../Image/Stickman1.png) no-repeat;
+        background-size: contain;
+    }
+    10%{
+        opacity: 1; 
+        background: url(../Image/Stickman2.png) no-repeat;
+        background-size: contain;
+    }
+    20%{
+        opacity: 1; 
+        background: url(../Image/Stickman3.png) no-repeat;
+        background-size: contain;
+    }
+    30%{
+        opacity: 1; 
+        background: url(../Image/Stickman4.png) no-repeat;
+        background-size: contain;
+    }
+    40%{
+        opacity: 1; 
+        background: url(../Image/Stickman5.png) no-repeat;
+        background-size: contain;
+    }
+    50%{
+        opacity: 1; 
+        background: url(../Image/Stickman6.png) no-repeat;
+        background-size: contain;
+    }
+    60%{
+        opacity: 1; 
+        background: url(../Image/Stickman7.png) no-repeat;
+        background-size: contain;
+    }
+    70%{../
+        opacity: 1; 
+        background:url(../Image/Stickman8.png) no-repeat;
+        background-size: contain;
+    }
+    80%{
+        opacity: 1;
+        background: url(../Image/Stickman9.png) no-repeat;
+        background-size: contain;
+    }
+    90%{ 
+        opacity: 1; 
+        background: url(../Image/Stickman1.png) no-repeat;
+        background-size: contain;
+    }
+    100%{
+        opacity: 1; 
+        background: url(../Image/Stickman2.png) no-repeat;
+        background-size: contain;
+    }
+}
+
+@-webkit-keyframes jump-stickman{
+    0% {margin-top: 382px;}
+    10% {margin-top: 382px;}
+    20% {margin-top: 382px;}
+    30% {margin-top: 382px;}
+    40% {margin-top: 382px;}
+    50% {margin-top: 382px;}
+    60% {margin-top: 382px;}
+    70% {margin-top: 382px;}
+    80% {margin-top: 382px;}
+    90% {margin-top: 340px;}
+    100% {margin-top: 382px;}
+}

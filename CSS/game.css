@@ -101,17 +101,6 @@ body{
     -webkit-animation:
         move-bloc 4s linear infinite;
 }
-
-#head img{
-    width: 120px;
-    height: 70px;
-    margin-left: 110px;
-    margin-top: 60px;
-    position: absolute;
-    -webkit-animation:
-        jump-img 4s linear infinite;
-}
-
 /* Game */
 
 #window-game{
@@ -121,14 +110,6 @@ body{
     height: 500px;
     margin-top: 100px;
     margin-left: 200px;
-    display: none;
-}
-#stickman{
-    position: absolute;
-    width: 120px;
-    height: 80px;
-    margin-top: 160px;
-    margin-left: 30px;
 }
 #game{
     width: 100%;
@@ -168,20 +149,6 @@ body{
     80% {top: 440px; left: 19%}
     90% {top: 440px; left: 9%}
     100% {top: 440px; left: -1%}
-}
-
-@-webkit-keyframes jump-img{
-    0% {top: 340px;}
-    10% {top: 340px;}
-    20% {top: 340px;}
-    30% {top: 340px;}
-    40% {top: 340px;}
-    50% {top: 340px;}
-    60% {top: 340px;}
-    70% {top: 340px;}
-    80% {top: 300px;}
-    90% {top: 340px;}
-    100% {top: 340px;}
 }
 
 /* Animation Game */
