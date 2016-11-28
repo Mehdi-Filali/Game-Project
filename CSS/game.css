@@ -128,11 +128,20 @@ body{
 .bloc{
     position: absolute;
     background: black;
+    opacity: 0;
     width: 40px;
     height: 40px;
-    -webkit-animation:
-        move-bloc1 3.5s linear infinite;
+    
+    -webkit-transition: width .5s ease-in, height .5s ease-in;
 }
+
+.bloc-1{
+    -webkit-animation: move-bloc1 3s linear infinite;
+}
+.bloc-2{
+    -webkit-animation: move-bloc1 3s 1.5s linear infinite;
+}
+
 
 /* Animation Home */
 
@@ -154,16 +163,16 @@ body{
 /* Animation Game */
 
 @-webkit-keyframes move-bloc1{
-    0% {top: 200px; left: 100%}
-    10% {top: 200px; left: 90%}
-    20% {top: 200px; left: 80%}
-    30% {top: 200px; left: 70%}
-    40% {top: 200px; left: 60%}
-    50% {top: 200px; left: 50%}
-    60% {top: 200px; left: 40%}
-    70% {top: 200px; left: 30%}
-    80% {top: 200px; left: 20%}
-    90% {top: 200px; left: 10%}
-    100% {top: 200px; left: 0%}
+    0% {opacity: 1; bottom: 10px; left: 100%}
+    10% {opacity: 1; bottom: 10px; left: 90%}
+    20% {opacity: 1; bottom: 10px; left: 80%}
+    30% {opacity: 1; bottom: 10px; left: 70%}
+    40% {opacity: 1; bottom: 10px; left: 60%}
+    50% {opacity: 1; bottom: 10px; left: 50%}
+    60% {opacity: 1; bottom: 10px; left: 40%}
+    70% {opacity: 1; bottom: 10px; left: 30%}
+    80% {opacity: 1; bottom: 10px; left: 20%}
+    90% {opacity: 1; bottom: 10px; left: 10%}
+    100% {opacity: 1; bottom: 10px; left: 0%}
 }
 

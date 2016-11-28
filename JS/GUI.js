@@ -30,14 +30,12 @@ exit.addEventListener('click', quit);
 
 /* Game */
 
-var canvas = document.getElementById("stickman");
-var context = canvas.getContext('2d');
+var randomize = function() {
+    var blocs = document.getElementsByClassName("bloc");
+    for(var b = 0; b < blocs.length; b++){
+        blocs[b].style.height = Math.random() * (50 - 30) + 30;
+        blocs[b].style.width = Math.random() * (40 - 20) + 20;
+     }
+}
 
-var stickman = new Image()
-    stickman.src="Img/run1.gif";
-
-context.drawImage(stickman, 50, 50, 100, 100);
-
-canvas.style.position='absolute';
-canvas.style.marginTop='95px';
-
+setInterval(randomize,1000);
