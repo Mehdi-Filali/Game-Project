@@ -13,7 +13,7 @@ body{
     background: black;
 }
 
-/* Home */
+/* Home  #4c8ca7*/
 
 #head{
     background: -webkit-linear-gradient(top ,#4c8ca7 ,#f96e69);
@@ -72,15 +72,16 @@ body{
     padding-right: 20px;
     position: absolute;
 }
-#button-player{
-    margin-top: 240px;
+
+#timer{
+    margin-top: 220px;
     line-height: 30px;
     font-size: 30px;
     color: black;
     border: solid 3px black;
     border-radius: 20px;
     display: inline-block;
-    margin-left: 390px;
+    margin-left: 410px;
     padding-left: 20px;
     padding-right: 20px;
     position: absolute;
@@ -120,13 +121,16 @@ body{
     height: 10px;
     margin-top: 240px;
 }
+
 #score{
     float: right;
     font-size: 40px;
     font-weight: bold;
     margin-right: 40px;
     margin-top: 30px;
+    font-family: 'game';
 }
+
 .bloc{
     position: absolute;
     background: black;
@@ -183,4 +187,3 @@ body{
     90% {opacity: 1; bottom: 10px; left: 10%}
     100% {opacity: 1; bottom: 10px; left: 0%}
 }
-
