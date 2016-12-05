@@ -14,7 +14,7 @@ var player=document.getElementById('button-player');
 
 var lets_play = function(){
     document.getElementById('head').style.display='none';
-    document.getElementById('window-game').style.display='inline-block';
+    document.getElementById('game').style.display='inline-block';
 }
 
 player.addEventListener('click', lets_play);
@@ -40,20 +40,28 @@ var randomize = function() {
 
 setInterval(randomize,1000);
 
-var jump = document.getElementById('Stickman1');
+var jump = document.getElementById('Stickman1'),
+    flag = false;
 
 function key_down(e){
-    console.log(e.keyCode);
-    if(e.keyCode === 38){
-        jump.style.top = '-70px'; 
+    //console.log(e.keyCode);    
+    if(e.keyCode === 32){
+        if(flag){
+            jump.style.top = '165px';
+            return;
+        }
+        
+        jump.style.top = '90px'; 
+        flag=true;
     }
 }
 
 body.addEventListener('keydown', key_down); 
 
 function key_up(e){
-    if(e.keyCode === 38){
-        jump.style.top = '0px';
+    if(e.keyCode === 32){
+        flag = false;
+        jump.style.top = '165px';
     }
 }
 
@@ -82,6 +90,15 @@ var score_evolution = function(){
 
 
 
+setInterval(function(){
+    console.log(document.getElementById('Stickman1').offsetTop);
+    
+    var blocs = document.getElementsByClassName('bloc');
+    for(var i=0; i<blocs.length; i++){
+        console.log(blocs[i].offsetHeight);
+    }
+    
+},500)
 
 
 

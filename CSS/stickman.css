@@ -5,24 +5,25 @@ body{
     background: url(../Image/Stickman1.png) no-repeat;
     background-size: contain;
     width: 12%;
-    height: 100px;
-    margin-top: 360px;
-    margin-left: 40px;
+    height: 80px;
+    margin-top: 352px;
+    margin-left: 50px;
     position: absolute;
     -webkit-animation: 
-        stickman-run .35s linear infinite,
+        stickman-run .30s linear infinite,
         jump-stickman 4s linear infinite;
 }
 #stickman1{
     background: url(../Image/Stickman1.png) no-repeat;
     background-size: contain;
-    width: 13%;
-    height: 100;
-    margin-top: 165px;
+    width: 12%;
+    height: 80px;
+    top: 165px;
     margin-left: 50px;
     position: absolute;
     -webkit-animation: 
-        stickman-run .35s linear infinite;
+        stickman-run .30s linear infinite;
+    -webkit-transition: top .3s linear;
 }
 
 /* Animation */
@@ -86,15 +87,15 @@ body{
 }
 
 @-webkit-keyframes jump-stickman{
-    0% {margin-top: 382px;}
-    10% {margin-top: 382px;}
-    20% {margin-top: 382px;}
-    30% {margin-top: 382px;}
-    40% {margin-top: 382px;}
-    50% {margin-top: 382px;}
-    60% {margin-top: 382px;}
-    70% {margin-top: 382px;}
-    80% {margin-top: 382px;}
-    90% {margin-top: 340px;}
-    100% {margin-top: 382px;}
+    0% {margin-top: 372px;}
+    10% {margin-top: 372px;}
+    20% {margin-top: 372px;}
+    30% {margin-top: 372px;}
+    40% {margin-top: 372px;}
+    50% {margin-top: 372px;}
+    60% {margin-top: 372px;}
+    70% {margin-top: 372px;}
+    80% {margin-top: 372px;}
+    90% {margin-top: 330px;}
+    100% {margin-top: 372px;}
 }
