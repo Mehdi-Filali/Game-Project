@@ -33,6 +33,8 @@ var quit = function(){
 
 if(exit) exit.addEventListener('click', quit);
 
+
+
 /* Game */
 
 var randomize = function() {

@@ -4,7 +4,7 @@ body{
 #stickman{
     background: url(../Image/Stickman1.png) no-repeat;
     background-size: contain;
-    width: 12%;
+    width: 60px;
     height: 80px;
     margin-top: 352px;
     margin-left: 50px;
@@ -16,7 +16,7 @@ body{
 #stickman1{
     background: url(../Image/Stickman1.png) no-repeat;
     background-size: contain;
-    width: 12%;
+    width: 60px;
     height: 80px;
     top: 165px;
     margin-left: 50px;

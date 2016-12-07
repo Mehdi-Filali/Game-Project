@@ -137,8 +137,46 @@ body{
     opacity: 0;
     width: 40px;
     height: 40px;
+    left: 100%;
     
     -webkit-transition: width .5s ease-in, height .5s ease-in;
+}
+#game-over{
+    font-family: 'game';
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 360px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+#restart{
+    font-family: 'game';
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 380px;
+    margin-top: 110px;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+#restart:hover{
+    color: white;
+}
+#exit{
+    font-family: 'game';
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 415px;
+    margin-top: 170px;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+#exit:hover{
+    color: white;
 }
 
 .bloc-1{
