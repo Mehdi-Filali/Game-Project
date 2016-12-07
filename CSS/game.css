@@ -145,16 +145,22 @@ body{
     font-family: 'game';
     font-size: 40px;
     font-weight: 100;
-    margin-left: 360px;
+    margin-left: 340px;
     margin-top: 50px;
     position: absolute;
     display: none;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-animation:
+        game-over 2s linear infinite;
 }
 #restart{
     font-family: 'game';
     font-size: 40px;
     font-weight: 100;
-    margin-left: 380px;
+    margin-left: 375px;
     margin-top: 110px;
     position: absolute;
     text-decoration: none;
@@ -224,4 +230,10 @@ body{
     80% {opacity: 1; bottom: 10px; left: 20%}
     90% {opacity: 1; bottom: 10px; left: 10%}
     100% {opacity: 1; bottom: 10px; left: 0%}
+}
+
+@-webkit-keyframes game-over{
+    0%{color: red}
+    50%{color: blue}
+    100%{color: red}
 }

@@ -58,7 +58,7 @@ function key_down(e){
             return;
         }
         
-        jump.style.top = '90px'; 
+        jump.style.top = '85px'; 
         flag=true;
     }
 }

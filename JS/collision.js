@@ -8,8 +8,7 @@ var check_collision = function(){
     for(var i=0; i<_blocs.length; i++){
         var _bloc = _blocs[i];
         
-        if(_bloc.offsetLeft <= (_s.offsetLeft + _s.offsetWidth) && _bloc.offsetLeft > _s.offsetLeft){
-            if((_s.offsetTop+_s.offsetHeight) > _bloc.offsetTop){
+        if(((_s.offsetTop+_s.offsetHeight) > _bloc.offsetTop) &&((_bloc.offsetLeft + _bloc.offsetWidth) <= (_s.offsetLeft + _s.offsetWidth))){
                 _s.style.display = 'none' ;
                 for (var j=0; j<_blocs.length; j++){
                     _blocs[j].style.display = 'none' ;
@@ -17,8 +16,8 @@ var check_collision = function(){
                 _end.style.display = 'inline-block';
                 _restart.style.display = 'inline-block';
                 _return.style.display = 'inline-block';
-            }   
-        }    
+                clearInterval(interval);
+        }
     }
 }
 
@@ -40,7 +39,7 @@ var evolution_score = function(){
 
 
 var decompte = function(){
-    interval = setInterval(evolution_score, 500);
+    interval = setInterval(evolution_score, 900);
 }
 
-setTimeout(decompte, 3000);
+setTimeout(decompte, 3200);
