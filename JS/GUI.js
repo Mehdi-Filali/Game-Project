@@ -24,15 +24,25 @@ if(!player){
     lets_play();
 };
 
-var exit=document.getElementById('button-exit');
+/* Exit */
+
+var exit=document.getElementById('exit');
 
 var quit = function(){
-    document.getElementById('button-play').style.display= 'none';
-    document.getElementById('button-exit').style.display='none';
+    location=('Index.html');
 }
 
 if(exit) exit.addEventListener('click', quit);
 
+/* Restart qui ne marches pas  */
+
+var _return = document.getElementById('restart');
+
+var _restart = function(){
+    document.getElementById('game').style.display='inline-block';    
+}
+
+if(_return) _return.addEventListener('click', _restart);
 
 
 /* Game */
