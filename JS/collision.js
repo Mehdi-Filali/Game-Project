@@ -1,3 +1,5 @@
+/* Collision */
+
 var check_collision = function(){
     var _s = document.getElementById('Stickman1'),
         _blocs = document.getElementsByClassName('bloc'),
@@ -5,10 +7,11 @@ var check_collision = function(){
         _restart = document.getElementById('restart'),
         _return = document.getElementById('exit');
     
-    for(var i=0; i<_blocs.length; i++){
+    for (var i= 0; i<_blocs.length ; i++){
         var _bloc = _blocs[i];
-        
-        if(((_s.offsetTop+_s.offsetHeight) > _bloc.offsetTop) &&((_bloc.offsetLeft + _bloc.offsetWidth) <= (_s.offsetLeft + _s.offsetWidth))){
+    
+        if(_bloc.offsetLeft <= (_s.offsetLeft + _s.offsetWidth)){
+            if((_s.offsetTop + _s.offsetHeight) > _bloc.offsetTop ){ 
                 _s.style.display = 'none' ;
                 for (var j=0; j<_blocs.length; j++){
                     _blocs[j].style.display = 'none' ;
@@ -16,8 +19,10 @@ var check_collision = function(){
                 _end.style.display = 'inline-block';
                 _restart.style.display = 'inline-block';
                 _return.style.display = 'inline-block';
-                clearInterval(interval);
+                clearInterval(interval);;
+            }
         }
+        
     }
 }
 
