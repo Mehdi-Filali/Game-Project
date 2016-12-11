@@ -48,3 +48,43 @@ var decompte = function(){
 }
 
 setTimeout(decompte, 3200);
+
+/* Exit */
+
+var exit=document.getElementById('exit');
+
+var quit = function(){
+    location=('Index.html');
+}
+
+exit.addEventListener('click', quit);
+
+/* Restart */
+
+var restart = document.getElementById('restart');
+
+var replay = function(){
+    var _g = document.getElementById('game-over'),
+        _e = document.getElementById('exit'),
+        _st = document.getElementById('Stickman1'),
+        _r = document.getElementById('restart'),
+        _blcs = document.getElementsByClassName('bloc'),
+        _score = document.getElementById('score');
+    
+    _g.style.display = 'none';
+    _e.style.display = 'none';
+    _r.style.display ='none';
+    _st.style.display = 'inline-block';
+    for(var s=0; s<_blcs.length; s++){
+        _blcs[s].style.display = 'inline-block';
+    }
+    interval = setInterval(evolution_score, 900);
+    setTimeout(decompte, 3200);
+    clearInterval(interval);
+    score.innerHTML = 0;
+    evolution = 0;
+}
+
+restart.addEventListener('click', replay);
+
+
