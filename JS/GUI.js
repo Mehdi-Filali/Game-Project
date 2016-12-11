@@ -4,9 +4,6 @@ var play=document.getElementById('button-play');
 
 var playing = function(){
     document.getElementById('button-play').style.display= 'none';
-    
-    document.getElementById('button-exit').style.display= 'none';
-        
     document.getElementById('timer').style.display= 'inline-block';
 }
 
